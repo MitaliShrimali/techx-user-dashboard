@@ -18,13 +18,13 @@ A production‑ready ReactJS dashboard for managing users, built with Redux Tool
 3. Run the development server:
     ```bash
     npm start
-
+    ```
     App runs at http://localhost:3000.
 
 4. Build for production:
     ```bash
     npm run build
-    
+    ```
     Output goes to the build/ folder.
 
 ## 🧩 Approach
