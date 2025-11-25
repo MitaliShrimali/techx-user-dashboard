@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# TechX User Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production‑ready ReactJS dashboard for managing users, built with Redux Toolkit, styled‑components, and resilient fallback logic.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Setup Instructions
 
-### `npm start`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MitaliShrimali/techx-user-dashboard.git
+   cd techx-user-dashboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+    bash
+    npm install
+    
+3. Run the development server:
+    bash
+    npm start
+    App runs at http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Build for production:
+    bash
+    npm run build
+    Output goes to the build/ folder.
 
-### `npm test`
+## 🧩 Approach
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Clean scaffold**: Removed the default CRA boilerplate and set up a modular folder structure (`components/`, `store/`, `themes/`, `utils/`) for clarity.
+- **State management**: Used Redux Toolkit slices to handle user data in a predictable and scalable way.
+- **UI polish**: Built reusable components (Button, Card, Modal) alongside user‑specific components (UserList, UserCard, AddUserForm) to keep the interface consistent.
+- **Fallback logic**: Added a static dataset of Indian names, emails, and companies so the dashboard remains functional even if the API fails. This ensures user always see meaningful data.
+- **Deployment**: Verified the build command (`npm run build`) and output directory (`build`) to ensure smooth deployment on Vercel.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚡ Challenges & Solutions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **API reliability**  
+  *Challenge*: The API occasionally failed or returned empty data.  
+  *Solution*: Integrated a static fallback dataset with Indian user details so the dashboard always displays realistic information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Repo clutter**  
+  *Challenge*: CRA’s default files (logo.svg, App.test.js, etc.) cluttered the repo.  
+  *Solution*: Removed unused files and reorganized code into clear directories.
 
-### `npm run eject`
+- **UI consistency**  
+  *Challenge*: Maintaining a professional look across multiple components.  
+  *Solution*: Applied styled‑components with a theme provider to enforce consistent colors, spacing, and typography.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Deployment errors**  
+  *Challenge*: Ensuring the app built correctly on Vercel without path or config issues.  
+  *Solution*: Double‑checked the build command (`npm run build`) and confirmed the output directory (`build`) matched CRA defaults.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 Live Demo
+👉 [View the dashboard](https://techx-user-dashboard.vercel.app)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Repository
+👉 [GitHub Repo](https://github.com/MitaliShrimali/techx-user-dashboard)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
