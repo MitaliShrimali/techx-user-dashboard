@@ -12,16 +12,16 @@ A production‑ready ReactJS dashboard for managing users, built with Redux Tool
    cd techx-user-dashboard
 
 2. Install dependencies:
-    bash
+    ```bash
     npm install
     
 3. Run the development server:
-    bash
+    ```bash
     npm start
     App runs at http://localhost:3000.
 
 4. Build for production:
-    bash
+    ```bash
     npm run build
     Output goes to the build/ folder.
 
